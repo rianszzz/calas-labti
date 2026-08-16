@@ -15,7 +15,7 @@ Groq LLM (llama-3.1-8b-instant)
 ```
 
 ### Alur Kerja
-1. Juri login ke aplikasi
+1. User login ke aplikasi
 2. Buat folder untuk mengelompokkan dokumen (opsional)
 3. Upload PDF (maks 5 MB)
 4. Sistem memproses: ekstraksi teks → chunking → embedding → simpan ke pgvector
@@ -53,8 +53,6 @@ GROQ_API_KEY=your-groq-api-key
 FRONTEND_URL=http://localhost:5173
 ```
 
-> **Catatan**: Gunakan **service_role key** (bukan anon key) karena RLS dinonaktifkan untuk akses backend.
-
 Jalankan:
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
@@ -76,18 +74,8 @@ VITE_API_URL=http://localhost:8000/api
 ## Kredensial Demo
 
 Untuk review internal, gunakan:
-- **Username**: `user`
+- **Username**: `admin`
 - **Password**: `123`
-
-## Environment Variables
-
-| Variable | Lokasi | Keterangan |
-|----------|--------|------------|
-| `SUPABASE_URL` | backend/.env | URL project Supabase |
-| `SUPABASE_KEY` | backend/.env | Service role key Supabase |
-| `GROQ_API_KEY` | backend/.env | API key Groq |
-| `FRONTEND_URL` | backend/.env | URL frontend untuk CORS |
-| `VITE_API_URL` | frontend/.env | URL API backend (opsional) |
 
 ## Batasan Saat Ini
 
