@@ -1,0 +1,19 @@
+# Backend
+backend/.env
+backend/uploads/
+backend/documents.db
+backend/__pycache__/
+backend/venv/
+*.pyc
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

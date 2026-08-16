@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F7F4ED; /* Background utama */
+  --color-secondary: #67A2C5; /* Warna biru lembut untuk aksen */
+  --color-text-main: #2D3748; /* Warna teks utama (abu-abu gelap) */
+  --color-text-muted: #718096; /* Warna teks sekunder (abu-abu sedang) */
+  
+  --font-sora: 'Sora', sans-serif;
+  --font-coolvetica: 'Coolvetica', 'Sora', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-text-main font-sora antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    @apply font-coolvetica tracking-tight; /* tracking-tight agar spacing tidak terlalu besar */
+  }
+}
+
+/* Utilitas untuk card agar terlihat bersih dan user-friendly */
+.dashboard-card {
+  @apply bg-white rounded-2xl shadow-sm border border-black/5 hover:shadow-md transition-shadow duration-200;
+}

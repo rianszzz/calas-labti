@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+supabase
+python-dotenv
+pymupdf4llm
+langchain-text-splitters
+fastembed
+groq
+pytest
+httpx
