@@ -1,6 +1,0 @@
-.env
-uploads/
-documents.db
-__pycache__/
-venv/
-*.pyc
